@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TitlePresenter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private readonly TitleView _titleView;
+    private readonly TitleModel _titleModel;
 
-    // Update is called once per frame
-    void Update()
+    public TitlePresenter(TitleView titleView, TitleModel titleModel)
     {
-        
+        _titleView = titleView;
+        _titleModel = titleModel;
     }
 }
